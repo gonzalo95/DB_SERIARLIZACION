@@ -35,6 +35,9 @@ namespace Toolbox
             return salida;
         }
 
+        // UPDATE: "UPDATE tabla SET campo = "gonzalo" WHERE dni =38587636"
+        // DELETE: "DELETE FROM tabla WHERE id = 15"
+
         public bool Insertar(Paquete p)
         {
             try
@@ -92,6 +95,8 @@ namespace Toolbox
                 throw new ErrorArchivoException("Error al leer", exc);
             }
         }
+
+        // [XmlInclude(typeof(Clase))]
 
         public bool GuardarXml(string ruta, T objeto)
         {
